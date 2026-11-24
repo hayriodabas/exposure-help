@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>测光表 (Exposure) — 隐私政策</title>
+<link rel="canonical" href="https://hayriodabas.github.io/exposure-help/zh-Hans/privacy.html">
+<style>:root {
+  color-scheme: light dark;
+  --ground: #e8e6e1;
+  --surface: #f2f1ed;
+  --raised: #fbfaf7;
+  --hairline: #c4bfb5;
+  --ink: #171612;
+  --ink2: #555048;
+  --tick: #7a7469;
+  --amber: #b56a00;
+  --amber-text: #955600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #121110;
+    --surface: #1b1916;
+    --raised: #24211d;
+    --hairline: #3a3630;
+    --ink: #ede6d8;
+    --ink2: #a69e90;
+    --tick: #7a7266;
+    --amber: #f0a63a;
+    --amber-text: #f0a63a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16.5px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.scale-bar {
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid var(--hairline);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 23px,
+      var(--tick) 23px,
+      var(--tick) 24px
+    );
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.scale-bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+  background: var(--amber);
+}
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 36px 20px 68px;
+}
+.kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber-text);
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  letter-spacing: -0.015em;
+}
+.lede {
+  font-size: 18.5px;
+  color: var(--ink2);
+  margin: 0 0 22px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 28px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+a {
+  color: var(--amber-text);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 32px 0 10px;
+  font-weight: 650;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 16px 18px;
+  margin: 12px 0;
+}
+.panel strong {
+  display: block;
+  margin-bottom: 4px;
+}
+ul, ol {
+  padding-left: 20px;
+}
+li {
+  margin: 7px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 15px;
+}
+th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+}
+tr:last-child td { border-bottom: none; }
+.langs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.langs li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 11px 14px;
+}
+footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink2);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 29px; }
+  main { padding: 26px 16px 52px; }
+}
+</style>
+</head>
+<body>
+<div class="scale-bar" aria-hidden="true"></div>
+<main>
+  <div class="kicker">测光表 (Exposure)</div>
+  <h1>隐私政策</h1>
+  <p class="lede">Exposure 不收集任何个人数据，无需登录账号，所有内容均仅保存在你的设备本地。</p>
+  <nav>
+    <a href="help.html">帮助</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="../index.html">所有语言</a>
+  </nav>
+  <h2>数据概要</h2>
+  <table><tbody><tr><td><strong>相机</strong></td><td>仅在本地读取自动曝光数值以计算 EV，不拍摄、保存或上传任何照片或视频。</td></tr><tr><td><strong>胶卷与设置</strong></td><td>仅保存在本机沙盒中（rolls.json 与 UserDefaults），不记录位置信息。</td></tr><tr><td><strong>账号、分析与广告</strong></td><td>无。不含任何第三方跟踪、分析或广告 SDK。</td></tr><tr><td><strong>网络通信</strong></td><td>仅通过 Apple StoreKit 加载、购买或恢复 Exposure Pro。</td></tr></tbody></table>
+  <h2>零数据收集</h2><p>Exposure 不收集、传输、出售或共享任何个人信息、定位数据或使用遥测。</p><h2>相机权限</h2><p>仅在点击开始测光后请求，视频帧到达后立即丢弃，绝不写入相册。</p><h2>删除数据</h2><p>前往 设置 › 删除所有胶卷 可一键清空记录；卸载应用将删除其余本地设置。</p><h2>App 内购买项目</h2><p>Exposure Pro 为一次性买断，由 Apple StoreKit 直接处理。</p>
+  <h2>联系方式</h2>
+  <p>关于 Exposure 的问题或反馈：<a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a></p>
+  <footer>生效日期：2026年11月24日 · Exposure (app.klarwerk.exposure) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>

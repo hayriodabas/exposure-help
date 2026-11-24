@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>露出計 (Exposure) — ヘルプ・使い方</title>
+<link rel="canonical" href="https://hayriodabas.github.io/exposure-help/ja/help.html">
+<style>:root {
+  color-scheme: light dark;
+  --ground: #e8e6e1;
+  --surface: #f2f1ed;
+  --raised: #fbfaf7;
+  --hairline: #c4bfb5;
+  --ink: #171612;
+  --ink2: #555048;
+  --tick: #7a7469;
+  --amber: #b56a00;
+  --amber-text: #955600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #121110;
+    --surface: #1b1916;
+    --raised: #24211d;
+    --hairline: #3a3630;
+    --ink: #ede6d8;
+    --ink2: #a69e90;
+    --tick: #7a7266;
+    --amber: #f0a63a;
+    --amber-text: #f0a63a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16.5px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.scale-bar {
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid var(--hairline);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 23px,
+      var(--tick) 23px,
+      var(--tick) 24px
+    );
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.scale-bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+  background: var(--amber);
+}
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 36px 20px 68px;
+}
+.kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber-text);
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  letter-spacing: -0.015em;
+}
+.lede {
+  font-size: 18.5px;
+  color: var(--ink2);
+  margin: 0 0 22px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 28px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+a {
+  color: var(--amber-text);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 32px 0 10px;
+  font-weight: 650;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 16px 18px;
+  margin: 12px 0;
+}
+.panel strong {
+  display: block;
+  margin-bottom: 4px;
+}
+ul, ol {
+  padding-left: 20px;
+}
+li {
+  margin: 7px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 15px;
+}
+th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+}
+tr:last-child td { border-bottom: none; }
+.langs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.langs li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 11px 14px;
+}
+footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink2);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 29px; }
+  main { padding: 26px 16px 52px; }
+}
+</style>
+</head>
+<body>
+<div class="scale-bar" aria-hidden="true"></div>
+<main>
+  <div class="kicker">露出計 (Exposure)</div>
+  <h1>ヘルプ・使い方</h1>
+  <p class="lede">お使いのフィルムカメラの絞りとシャッター目盛りだけで答える反射光式露出計。</p>
+  <nav>
+    <a href="help.html">ヘルプ</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="../index.html">言語一覧</a>
+  </nav>
+  <h2>基本的な使い方</h2>
+  <ol><li><strong>フィルムとカメラ.</strong> 上部バーからフィルムの箱感度と撮影感度（増感・減感）、カメラのシャッター速度（1段・1/2段・1/3段、旧系列 1/25・1/50・1/100）、B、絞り範囲、ピンホールを登録できます。</li><li><strong>スポット測光と全体測光.</strong> ファインダー内をタップするとその位置をスポット測光し、測光値を固定で EV と経過時間を保持できます。</li><li><strong>シャドー・ハイライトとシーン帯.</strong> 明暗差が大きい場面では暗部をシャドー、明部をハイライトに設定すると、フィルムの許容範囲（初期値 −2〜+2 EV）に収まるかをシーン帯で確認し露出位置を調整できます。</li><li><strong>カメラ限界の案内.</strong> カメラの限界を超える光では使えない目盛りに斜線が入り、絞り込みや ND フィルターをワンタップで提案します。</li><li><strong>Exposure Pro（買い切り）.</strong> ロール記録（ワンタップ記録・メモ・テキスト/CSV書き出し）と長時間露光計算（ND2〜16段、HARMAN 社 ILFORD/KENTMERE 相反則不軌 Tc = Tm^p、B 門カウントダウン）を追加します。</li></ol>
+  <h2>よくある質問</h2>
+  <div class="panel"><strong>iPhone での測光精度は？</strong>カメラの自動露出から光を推定します。設定 › 露出計に合わせる で信頼できる露出計と一度補正値（−3〜+3 EV）を合わせられます。</div><div class="panel"><strong>写真や動画は保存されますか？</strong>いいえ。露出パラメータのみを読み取り、画像の保存や送信は一切行いません。</div><div class="panel"><strong>カメラなしで使えますか？</strong>ファインダーの手動から EV を直接入力するか、Kodak TRI-X F-4017 の日中露出表を選べます。</div><div class="panel"><strong>購入を復元したい</strong>設定 › 購入を復元 から同じ Apple Account で復元できます。返金は reportaproblem.apple.com をご利用ください。</div>
+  <h2>お問い合わせ</h2>
+  <p>Exposure に関するご質問・不具合報告：<a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a></p>
+  <footer>改定日：2026年11月24日 · Exposure (app.klarwerk.exposure) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>

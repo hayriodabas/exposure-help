@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belichtungsmesser (Exposure) — Datenschutzerklärung</title>
+<link rel="canonical" href="https://hayriodabas.github.io/exposure-help/de-DE/privacy.html">
+<style>:root {
+  color-scheme: light dark;
+  --ground: #e8e6e1;
+  --surface: #f2f1ed;
+  --raised: #fbfaf7;
+  --hairline: #c4bfb5;
+  --ink: #171612;
+  --ink2: #555048;
+  --tick: #7a7469;
+  --amber: #b56a00;
+  --amber-text: #955600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #121110;
+    --surface: #1b1916;
+    --raised: #24211d;
+    --hairline: #3a3630;
+    --ink: #ede6d8;
+    --ink2: #a69e90;
+    --tick: #7a7266;
+    --amber: #f0a63a;
+    --amber-text: #f0a63a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16.5px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.scale-bar {
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid var(--hairline);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 23px,
+      var(--tick) 23px,
+      var(--tick) 24px
+    );
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.scale-bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+  background: var(--amber);
+}
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 36px 20px 68px;
+}
+.kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber-text);
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  letter-spacing: -0.015em;
+}
+.lede {
+  font-size: 18.5px;
+  color: var(--ink2);
+  margin: 0 0 22px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 28px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+a {
+  color: var(--amber-text);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 32px 0 10px;
+  font-weight: 650;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 16px 18px;
+  margin: 12px 0;
+}
+.panel strong {
+  display: block;
+  margin-bottom: 4px;
+}
+ul, ol {
+  padding-left: 20px;
+}
+li {
+  margin: 7px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 15px;
+}
+th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+}
+tr:last-child td { border-bottom: none; }
+.langs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.langs li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 11px 14px;
+}
+footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink2);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 29px; }
+  main { padding: 26px 16px 52px; }
+}
+</style>
+</head>
+<body>
+<div class="scale-bar" aria-hidden="true"></div>
+<main>
+  <div class="kicker">Belichtungsmesser (Exposure)</div>
+  <h1>Datenschutzerklärung</h1>
+  <p class="lede">Exposure erfasst keine personenbezogenen Daten, benötigt kein Konto und speichert alles lokal.</p>
+  <nav>
+    <a href="help.html">Hilfe</a>
+    <a href="privacy.html">Datenschutz</a>
+    <a href="../index.html">Alle Sprachen</a>
+  </nav>
+  <h2>Überblick</h2>
+  <table><tbody><tr><td><strong>Kamera</strong></td><td>Liest nur Belichtungsdaten zur EV-Berechnung. Keine Fotos oder Videos werden gespeichert oder gesendet.</td></tr><tr><td><strong>Rollen, Kameras &amp; Einstellungen</strong></td><td>Ausschließlich lokal auf deinem Gerät (rolls.json und UserDefaults). Kein Standort.</td></tr><tr><td><strong>Konten, Analyse &amp; Werbung</strong></td><td>Keine. Keine Tracking- oder Analyse-SDKs von Drittanbietern.</td></tr><tr><td><strong>Netzwerk</strong></td><td>Nur StoreKit (Apple) für Preisabruf, Kauf oder Wiederherstellung von Exposure Pro.</td></tr></tbody></table>
+  <h2>Keine Datenerfassung</h2><p>Exposure sammelt, überträgt oder teilt keinerlei personenbezogene Daten, Nutzungsstatistiken oder Gerätekennungen.</p><h2>Kamerazugriff</h2><p>Der Zugriff wird erst nach Tipp auf Messung starten angefragt. Einzelbilder werden sofort verworfen und nie gesichert.</p><h2>Daten löschen</h2><p>Unter Einstellungen › Alle Filme löschen entfernst du das Filmtagebuch vollständig; das Löschen der App entfernt alle übrigen Einstellungen.</p><h2>In-App-Kauf</h2><p>Exposure Pro ist ein einmaliger Kauf über Apples StoreKit. Zahlungsdaten erhalten wir nicht.</p>
+  <h2>Kontakt</h2>
+  <p>Fragen oder Hinweise zu Exposure: <a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a>.</p>
+  <footer>Stand: 24. November 2026 · Exposure (app.klarwerk.exposure) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>

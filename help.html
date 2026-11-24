@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exposure — Help &amp; Guide</title>
+<link rel="canonical" href="https://hayriodabas.github.io/exposure-help/en-US/help.html">
+<style>:root {
+  color-scheme: light dark;
+  --ground: #e8e6e1;
+  --surface: #f2f1ed;
+  --raised: #fbfaf7;
+  --hairline: #c4bfb5;
+  --ink: #171612;
+  --ink2: #555048;
+  --tick: #7a7469;
+  --amber: #b56a00;
+  --amber-text: #955600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #121110;
+    --surface: #1b1916;
+    --raised: #24211d;
+    --hairline: #3a3630;
+    --ink: #ede6d8;
+    --ink2: #a69e90;
+    --tick: #7a7266;
+    --amber: #f0a63a;
+    --amber-text: #f0a63a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16.5px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.scale-bar {
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid var(--hairline);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 23px,
+      var(--tick) 23px,
+      var(--tick) 24px
+    );
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.scale-bar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+  background: var(--amber);
+}
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 36px 20px 68px;
+}
+.kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber-text);
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  letter-spacing: -0.015em;
+}
+.lede {
+  font-size: 18.5px;
+  color: var(--ink2);
+  margin: 0 0 22px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 28px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+a {
+  color: var(--amber-text);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 32px 0 10px;
+  font-weight: 650;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 16px 18px;
+  margin: 12px 0;
+}
+.panel strong {
+  display: block;
+  margin-bottom: 4px;
+}
+ul, ol {
+  padding-left: 20px;
+}
+li {
+  margin: 7px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 15px;
+}
+th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+}
+tr:last-child td { border-bottom: none; }
+.langs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.langs li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 11px 14px;
+}
+footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink2);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 29px; }
+  main { padding: 26px 16px 52px; }
+}
+</style>
+</head>
+<body>
+<div class="scale-bar" aria-hidden="true"></div>
+<main>
+  <div class="kicker">Exposure</div>
+  <h1>Help &amp; Guide</h1>
+  <p class="lede">Reflected-light film meter built around your own camera&#x27;s shutter and aperture marks.</p>
+  <nav>
+    <a href="help.html">Help</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="../index.html">All languages</a>
+  </nav>
+  <h2>Using Exposure</h2>
+  <ol><li><strong>Film and camera.</strong> Tap the top bar to set box speed and exposed ISO (push/pull), then define your cameras: fastest and slowest shutter speeds (whole, half, third stops, or older 1/25–1/50–1/100 sequences), B mode, lens aperture clicks, or a fixed-aperture pinhole. Exposure answers only with settings that camera can actually set.</li><li><strong>Spot and whole-frame metering.</strong> Point your iPhone at the subject. Tap any point in the viewfinder to spot-meter it, or tap Spot to return to whole-frame averaging. Hold reading freezes the EV with its elapsed age while you adjust your camera.</li><li><strong>Shadow, highlight &amp; scene band.</strong> In harsh contrast, tap the deepest shadow that must keep detail, wait briefly for auto-exposure to settle, and tap Shadow. Tap the brightest area and tap Highlight. The Scene band compares both against your film&#x27;s detail window (default −2 to +2 EV, adjustable in Film and camera). Place shadow, middle, or highlight, or drag the ruler in thirds of a stop.</li><li><strong>Out-of-range limits.</strong> When the light exceeds your camera&#x27;s fastest speed or smallest aperture, Exposure hatches unavailable marks and offers a one-tap fix such as stopping down, slowing the shutter, or adding an ND filter.</li><li><strong>Exposure Pro (one-time purchase).</strong> Adds the Roll Log (load a roll, write frames in one tap with aperture, speed, EV, scene ends, notes, and text/CSV export) and Long Exposure tools (ND2 to 16-stop filters, HARMAN technology ILFORD/KENTMERE reciprocity Tc = Tm^p or custom exponent, and a B-shutter countdown timer).</li></ol>
+  <h2>Frequently asked questions</h2>
+  <div class="panel"><strong>How accurate is an iPhone as a light meter?</strong>An iPhone camera estimates reflected light from its auto-exposure system; it is not a lab-calibrated meter. Match it once to a trusted meter in Settings › Match my meter, or dial a −3 to +3 EV calibration offset stored locally on your device.</div><div class="panel"><strong>Does Exposure take or save photos?</strong>No. The camera stream is used solely to read auto-exposure parameters (aperture, exposure duration, ISO, target offset). No frame is captured, stored, or transmitted.</div><div class="panel"><strong>Can I use Exposure without camera access?</strong>Yes. Tap By hand in the finder to dial EV directly in thirds of a stop or select a row from the Kodak TRI-X F-4017 daylight exposure table.</div><div class="panel"><strong>I already bought Exposure Pro — how do I restore it?</strong>Open Settings (top right) and tap Restore purchase using the same Apple Account. Refunds are handled by Apple at reportaproblem.apple.com.</div>
+  <h2>Contact</h2>
+  <p>Questions or bug reports about Exposure: <a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a>.</p>
+  <footer>Effective November 24, 2026 · Exposure (app.klarwerk.exposure) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>
